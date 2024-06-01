@@ -1,0 +1,501 @@
+/* 清除浏览器默认边距 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "微软雅黑"; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 主体 */
+
+.main .container {
+  margin: 0 auto;
+}
+
+.main .calender_year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 126px;
+  margin-bottom: 98px;
+}
+
+.main .calender_year h4 {
+  font-size: 60px;
+  color: #deb718;
+  font-family: ipagp;
+}
+
+.main .calender_year_prev,
+.main .calender_year_next {
+  width: 49px;
+  cursor: pointer;
+}
+
+.main .calender_year_prev img,
+.main .calender_year_next img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+
+.main .calender_year_prev img:hover,
+.main .calender_year_next img:hover {
+  filter: grayscale(0);
+}
+
+.main .calender_wrap {
+  font-family: ipagp;
+}
+
+.main .calender_wrap .calender_year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.main .calender_wrap .calender_year h4 {
+  font-size: 150px;
+  margin: 0 25px;
+}
+
+.main .calender_wrap .calender_year .calender_year_prev,
+.main .calender_wrap .calender_year .calender_year_next {
+  width: 87px;
+  cursor: pointer;
+}
+
+.main .calender_wrap .calender_year .calender_year_prev span,
+.main .calender_wrap .calender_year .calender_year_next span {
+  display: block;
+}
+
+.main .calender_wrap .calender_year .calender_year_prev span img,
+.main .calender_wrap .calender_year .calender_year_next span img {
+  width: 100%;
+}
+
+.main .calender_wrap .calender_month {
+  width: 70.25%;
+  margin: 0 auto;
+}
+
+.main .calender_wrap .calender_month .month {
+  text-align: center;
+  font-size: 36px;
+}
+
+.main .calender_wrap .calender_month .day_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* margin: 25px 0 50px; */
+  margin: 60px 0;
+}
+
+/* 隐藏表头 */
+/* .main .calender_wrap .calender_month .day_table .thead {
+    display: none;
+} */
+
+.main .calender_wrap .calender_month .day_table .tbody td {
+  width: calc(100% / 7);
+  /* border: 1px solid #C3C6D0;
+    background-color: #F5F5F5; */
+  color: #a9a8a8;
+  /* color: rgba(255, 255, 255, .1); */
+}
+
+.main .calender_wrap .calender_month .day_table .tbody .active {
+  color: #000;
+  background-color: #2b62a5;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.main .calender_wrap .calender_month .day_table .tbody .active:last-child {
+  border-right-color: #c3c6d0;
+}
+
+.main .calender_wrap .calender_month .day_table .tbody tr:last-child .active {
+  border-bottom-color: #c3c6d0;
+}
+
+/* 一月颜色 */
+
+.main .calender_wrap .JANUARY .day_table .tbody tr:first-child .active {
+  background-color: #2b62a5;
+}
+
+.main .calender_wrap .JANUARY .day_table .tbody tr:nth-child(2) .active {
+  background-color: #3f74b1;
+}
+
+.main .calender_wrap .JANUARY .day_table .tbody tr:nth-child(3) .active {
+  background-color: #558bc0;
+}
+
+.main .calender_wrap .JANUARY .day_table .tbody tr:nth-child(4) .active {
+  background-color: #6da7d2;
+}
+
+.main .calender_wrap .JANUARY .day_table .tbody tr:nth-child(5) .active {
+  background-color: #8dcae7;
+}
+
+.main .calender_wrap .JANUARY .day_table .tbody tr:nth-child(6) .active {
+  background-color: #9fd7e8;
+}
+
+/* 二月颜色 */
+
+.main .calender_wrap .FEBRUARY .day_table .tbody tr:first-child .active {
+  background-color: #9fd7e8;
+}
+
+.main .calender_wrap .FEBRUARY .day_table .tbody tr:nth-child(2) .active {
+  background-color: #b9dfd5;
+}
+
+.main .calender_wrap .FEBRUARY .day_table .tbody tr:nth-child(3) .active {
+  background-color: #d2e7ba;
+}
+
+.main .calender_wrap .FEBRUARY .day_table .tbody tr:nth-child(4) .active {
+  background-color: #ebee9c;
+}
+
+.main .calender_wrap .FEBRUARY .day_table .tbody tr:nth-child(5) .active {
+  background-color: #fff578;
+}
+
+.main .calender_wrap .FEBRUARY .day_table .tbody tr:nth-child(6) .active {
+  background-color: #fff578;
+}
+
+/* 三月颜色 */
+
+.main .calender_wrap .MARCH .day_table .tbody tr:first-child .active {
+  background-color: #fff578;
+}
+
+.main .calender_wrap .MARCH .day_table .tbody tr:nth-child(2) .active {
+  background-color: #fee185;
+}
+
+.main .calender_wrap .MARCH .day_table .tbody tr:nth-child(3) .active {
+  background-color: #facfa1;
+}
+
+.main .calender_wrap .MARCH .day_table .tbody tr:nth-child(4) .active {
+  background-color: #f6b9b6;
+}
+
+.main .calender_wrap .MARCH .day_table .tbody tr:nth-child(5) .active {
+  background-color: #f3a9c0;
+}
+
+.main .calender_wrap .MARCH .day_table .tbody tr:nth-child(6) .active {
+  background-color: #f3a9c0;
+}
+
+/* 四月颜色 */
+
+.main .calender_wrap .APRIL .day_table .tbody tr:first-child .active {
+  background-color: #f3a9c0;
+}
+
+.main .calender_wrap .APRIL .day_table .tbody tr:nth-child(2) .active {
+  background-color: #dca2c3;
+}
+
+.main .calender_wrap .APRIL .day_table .tbody tr:nth-child(3) .active {
+  background-color: #c79ec5;
+}
+
+.main .calender_wrap .APRIL .day_table .tbody tr:nth-child(4) .active {
+  background-color: #b29cc6;
+}
+
+.main .calender_wrap .APRIL .day_table .tbody tr:nth-child(5) .active {
+  background-color: #9a98c7;
+}
+
+.main .calender_wrap .APRIL .day_table .tbody tr:nth-child(6) .active {
+  background-color: #9a98c7;
+}
+
+/* 五月颜色 */
+
+.main .calender_wrap .MAY .day_table .tbody tr:first-child .active {
+  background-color: #9a98c7;
+}
+
+.main .calender_wrap .MAY .day_table .tbody tr:nth-child(2) .active {
+  background-color: #829ec3;
+}
+
+.main .calender_wrap .MAY .day_table .tbody tr:nth-child(3) .active {
+  background-color: #6ea2bf;
+}
+
+.main .calender_wrap .MAY .day_table .tbody tr:nth-child(4) .active {
+  background-color: #53a5b9;
+}
+
+.main .calender_wrap .MAY .day_table .tbody tr:nth-child(5) .active {
+  background-color: #00a7af;
+}
+
+.main .calender_wrap .MAY .day_table .tbody tr:nth-child(6) .active {
+  background-color: #11a0a0;
+}
+
+/* 六月颜色 */
+
+.main .calender_wrap .JUNE .day_table .tbody tr:first-child .active {
+  background-color: #11a0a0;
+}
+
+.main .calender_wrap .JUNE .day_table .tbody tr:nth-child(2) .active {
+  background-color: #45a98c;
+}
+
+.main .calender_wrap .JUNE .day_table .tbody tr:nth-child(3) .active {
+  background-color: #6cb072;
+}
+
+.main .calender_wrap .JUNE .day_table .tbody tr:nth-child(4) .active {
+  background-color: #90b94f;
+}
+
+.main .calender_wrap .JUNE .day_table .tbody tr:nth-child(5) .active {
+  background-color: #a6bf2c;
+}
+
+.main .calender_wrap .JUNE .day_table .tbody tr:nth-child(6) .active {
+  background-color: #a6bf2c;
+}
+
+/* 七月颜色 */
+
+.main .calender_wrap .JULY .day_table .tbody tr:first-child .active {
+  background-color: #8ec320;
+}
+
+.main .calender_wrap .JULY .day_table .tbody tr:nth-child(2) .active {
+  background-color: #a8cc18;
+}
+
+.main .calender_wrap .JULY .day_table .tbody tr:nth-child(3) .active {
+  background-color: #c6d80f;
+}
+
+.main .calender_wrap .JULY .day_table .tbody tr:nth-child(4) .active {
+  background-color: #d8dd49;
+}
+
+.main .calender_wrap .JULY .day_table .tbody tr:nth-child(5) .active {
+  background-color: #f8ed03;
+}
+
+.main .calender_wrap .JULY .day_table .tbody tr:nth-child(6) .active {
+  background-color: #f8ed03;
+}
+
+/* 八月颜色 */
+
+.main .calender_wrap .AUGUST .day_table .tbody tr:first-child .active {
+  background-color: #f5d74a;
+}
+
+.main .calender_wrap .AUGUST .day_table .tbody tr:nth-child(2) .active {
+  background-color: #e1b058;
+}
+
+.main .calender_wrap .AUGUST .day_table .tbody tr:nth-child(3) .active {
+  background-color: #dc8f6e;
+}
+
+.main .calender_wrap .AUGUST .day_table .tbody tr:nth-child(4) .active {
+  background-color: #c96b73;
+}
+
+.main .calender_wrap .AUGUST .day_table .tbody tr:nth-child(5) .active {
+  background-color: #ce4277;
+}
+
+.main .calender_wrap .AUGUST .day_table .tbody tr:nth-child(6) .active {
+  background-color: #ce4277;
+}
+
+/* 九月颜色 */
+
+.main .calender_wrap .SEPTEMBER .day_table .tbody tr:first-child .active {
+  background-color: #c83580;
+}
+
+.main .calender_wrap .SEPTEMBER .day_table .tbody tr:nth-child(2) .active {
+  background-color: #da4d8e;
+}
+
+.main .calender_wrap .SEPTEMBER .day_table .tbody tr:nth-child(3) .active {
+  background-color: #e37593;
+}
+
+.main .calender_wrap .SEPTEMBER .day_table .tbody tr:nth-child(4) .active {
+  background-color: #ed9c95;
+}
+
+.main .calender_wrap .SEPTEMBER .day_table .tbody tr:nth-child(5) .active {
+  background-color: #f6ba92;
+}
+
+.main .calender_wrap .SEPTEMBER .day_table .tbody tr:nth-child(6) .active {
+  background-color: #f6ba92;
+}
+
+/* 十月颜色 */
+
+.main .calender_wrap .OCTOBER .day_table .tbody tr:first-child .active {
+  background-color: #f7bc8f;
+}
+
+.main .calender_wrap .OCTOBER .day_table .tbody tr:nth-child(2) .active {
+  background-color: #eb9c6e;
+}
+
+.main .calender_wrap .OCTOBER .day_table .tbody tr:nth-child(3) .active {
+  background-color: #e18155;
+}
+
+.main .calender_wrap .OCTOBER .day_table .tbody tr:nth-child(4) .active {
+  background-color: #d7633e;
+}
+
+.main .calender_wrap .OCTOBER .day_table .tbody tr:nth-child(5) .active {
+  background-color: #d14d31;
+}
+
+.main .calender_wrap .OCTOBER .day_table .tbody tr:nth-child(6) .active {
+  background-color: #c83125;
+}
+
+/* 十一月颜色 */
+
+.main .calender_wrap .NOVEMBER .day_table .tbody tr:first-child .active {
+  background-color: #c83125;
+}
+
+.main .calender_wrap .NOVEMBER .day_table .tbody tr:nth-child(2) .active {
+  background-color: #ca5828;
+}
+
+.main .calender_wrap .NOVEMBER .day_table .tbody tr:nth-child(3) .active {
+  background-color: #d8892c;
+}
+
+.main .calender_wrap .NOVEMBER .day_table .tbody tr:nth-child(4) .active {
+  background-color: #cfaa3b;
+}
+
+.main .calender_wrap .NOVEMBER .day_table .tbody tr:nth-child(5) .active {
+  background-color: #d9bf41;
+}
+
+.main .calender_wrap .NOVEMBER .day_table .tbody tr:nth-child(6) .active {
+  background-color: #d9bf41;
+}
+
+/* 十二月颜色 */
+
+.main .calender_wrap .DECEMBER .day_table .tbody tr:first-child .active {
+  background-color: #dac141;
+}
+
+.main .calender_wrap .DECEMBER .day_table .tbody tr:nth-child(2) .active {
+  background-color: #b3a258;
+}
+
+.main .calender_wrap .DECEMBER .day_table .tbody tr:nth-child(3) .active {
+  background-color: #7c7b6f;
+}
+
+.main .calender_wrap .DECEMBER .day_table .tbody tr:nth-child(4) .active {
+  background-color: #516f91;
+}
+
+.main .calender_wrap .DECEMBER .day_table .tbody tr:nth-child(5) .active {
+  background-color: #306398;
+}
+
+.main .calender_wrap .DECEMBER .day_table .tbody tr:nth-child(6) .active {
+  background-color: #306398;
+}
+
+.main .calender_wrap .calender_month .day_table .thead {
+  text-align: center;
+  font-size: 18px;
+}
+
+.main .calender_wrap .calender_month .day_table .thead td {
+  padding-bottom: 15px;
+}
+
+.main .calender_wrap .calender_month .day_table .tbody {
+  text-align: right;
+  border: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+.main .calender_wrap .calender_month .day_table .tbody td {
+  padding-bottom: 45px;
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+/* top返回顶部 */
+.back-to-top-btn {
+  /* 初始隐藏按钮 */
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-image: url("../img/11-02.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: rotate(-90deg);
+  transition: all 0.5s linear;
+}
+
+.back-to-top-btn:hover {
+  background-image: url("../img/11-01.png");
+}
+
+/* 当滚动条滚动超过100px时显示按钮 */
+.show {
+  display: block;
+}
+
+/* 底部标题经过变色 */
+
+.footer .ft__menu__list .menu__list__item a {
+  transition: all 0.3s ease-in-out 0.2s;
+}
+.footer .ft__menu__list .menu__list__item a:hover {
+  color: #fff;
+}

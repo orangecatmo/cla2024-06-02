@@ -1,0 +1,274 @@
+.header {
+  font-size: 1.3rem;
+}
+
+.nav {
+  margin: 2.5rem 0;
+}
+
+.nav ul li a {
+  /* color: #e3c200; */
+  color: #fff;
+  font-family: Ayuthaya;
+}
+
+.menu .menu__list {
+  display: flex;
+}
+
+.menu .menu__list .menu__list__item a {
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.menu .menu__list .menu__list__item a:hover {
+  color: #fff;
+  color: #e3c200;
+}
+
+.menu .menu__list .menu__list__item {
+  position: relative;
+  /* color: #ffce15; */
+}
+
+.menu .menu__list .menu__list__item + .menu__list__item {
+  margin-left: 5rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title {
+  position: relative;
+  width: 45.53rem;
+}
+
+section .title img {
+  width: 100%;
+}
+
+/* 加载条 */
+section .title .loading {
+  position: absolute;
+  width: 100px;
+  right: 106px;
+  bottom: 0px;
+}
+
+section .title .loading img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 星星 */
+
+section .title .start {
+  position: absolute;
+  width: 20px;
+  right: 30px;
+  top: -5px;
+}
+
+section .title .start img {
+  width: 100%;
+  height: 100%;
+}
+
+section .time {
+  display: flex;
+  font-size: 1.72rem;
+  align-self: stretch;
+}
+
+section .time .time__current .time__current--hs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.67rem;
+}
+
+.b_ri {
+  float: right;
+  color: #ffffff;
+  font-family: ipagp;
+}
+
+.b_ri dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  cursor: pointer;
+}
+
+.b_ri dl:hover {
+  color: #e3c200;
+}
+
+.b_ri dl dt {
+  font-size: 26px;
+}
+
+.b_ri dl dd {
+  /* font-size: 16px; */
+  white-space: nowrap;
+}
+
+#demo {
+  font-size: 2.625rem;
+  font-size: 2rem;
+}
+
+/* 实时时间 */
+.real_time {
+  display: flex;
+  /* 两边对齐 */
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+/* 星期几 */
+
+/* section .time .time__current .time__current--hs #timeWeek {
+  font-size: 1.55rem;
+} */
+
+section .time .time__month {
+  position: relative;
+  z-index: 1;
+  margin-left: 2.19rem;
+  width: 14.67rem;
+  text-align: center;
+}
+
+section .time .time__month .time__month--info {
+  margin-top: 1.67rem;
+}
+
+section .time .time__month .time__bg {
+  position: absolute;
+  right: 0;
+  top: -70%;
+  z-index: -1;
+  width: 14.67rem;
+  height: 15rem;
+  animation: time_bg 3s linear infinite;
+}
+
+section .time .time__month .time__bg img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@keyframes time_bg {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+.left_arrow {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1.125rem;
+}
+
+.left_arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  section .title {
+    width: 35rem !important;
+    flex: 5;
+  }
+
+  section .title .loading {
+    width: 80px;
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+  }
+
+  section .title .start {
+    position: absolute;
+    width: 20px;
+    right: 25px;
+    top: -3px;
+  }
+
+  #demo {
+    font-size: 2.5vw;
+    text-align: right;
+  }
+
+  section .time {
+    flex: 2;
+    font-size: 1.4rem;
+    justify-content: flex-end;
+  }
+
+  .b_ri #demo {
+    font-size: 2vw;
+  }
+
+  .b_ri dl dd {
+    font-size: 2vw;
+  }
+
+  .real_time {
+    margin-top: 0;
+    white-space: nowrap;
+  }
+
+  #demo {
+    margin-left: auto;
+  }
+
+  .real_time dd {
+    transform: scale(0.8);
+  }
+
+  .real_time #dd {
+    overflow: hidden;
+  }
+
+  .menu .menu__list .menu__list__item + .menu__list__item {
+    margin-left: 8vw !important;
+  }
+
+  .menu .menu__list .menu__list__item {
+    /* width: fit-content; */
+    font-weight: 300;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .menu .menu__list .menu__list__item {
+    width: fit-content;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .menu .menu__list .menu__list__item + .menu__list__item {
+    margin-left: 4vw !important;
+  }
+  .left_arrow {
+    width: 10px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  section .time {
+    flex: 2;
+    font-size: 1.4rem;
+    justify-content: flex-end;
+  }
+}
