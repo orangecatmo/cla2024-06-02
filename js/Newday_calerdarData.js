@@ -17,7 +17,7 @@ let calerdar_theme = {
                         value: "元日"
                     },
                     {
-                        key: "1月10日（月）",
+                        key: "1月8日（月）",
                         value: "成人の日"
                     },
                 ]
@@ -211,99 +211,99 @@ Mar: {
     translation: "弥 生",
     move_bg: "./img/花13.png",
     animation: " three 2s alternate linear infinite",
-    // 表格主题色
-    table_theme: ["#FFF478", "#FDE084", "#F9CEA0", "#F5B8B5", "#F2A8BF", "#F2A8BF"],
-    month_info: {
-        top: [{
-                title: "三月の祝日",
-                title_bg: "./img/郁金香_-06.png",
-                item: [{
-                    key: "3月20日 (水)",
-                    value: "春分の日"
-                },,
+       // 表格主题色
+       table_theme: ["#FFF478", "#FDE084", "#F9CEA0", "#F5B8B5", "#F2A8BF", "#F2A8BF"],
+       month_info: {
+           top: [{
+                   title: "三月の祝日",
+                   title_bg: "./img/郁金香_-06.png",
+                   item: [{
+                       key: "3月20日 (水)",
+                       value: "春分の日"
+                   }
 
-                ]
-            },
-            {
-                title: "三月の節気",
-                item: [{
-                        key: "啓蟄",
-                        value: "3月5日頃"
-                    },
-                    {
-                        key: "春分",
-                        value: "3月21日頃"
-                    },
-                ]
-            }
-        ],
-        bottom: [{
-                title: "三月の歲時記",
-                item: [{
-                        key: "3月2日",
-                        value: "多度津、終雪の頃"
-                    },
-                    {
-                        key: "3月4日",
-                        value: "松江、タンポポの開花の頃"
-                    },
-                    {
-                        key: "3月7日",
-                        value: "佐世保、終雪の頃"
-                    },
-                    {
-                        key: "3月9日",
-                        value: "日田、終雪の頃"
-                    },
-                    {
-                        key: "3月12日",
-                        value: "鳥取、タンポポの開花の頃"
-                    },
-                    {
-                        key: "3月15日",
-                        value: "新潟、ウメの開花の頃"
-                    },
-                    {
-                        key: "3月16日",
-                        value: "四日市、終雪の頃"
-                    },
-                    {
-                        key: "3月18日",
-                        value: "静岡、モンシロチョウの初見の頃"
-                    },
-                    {
-                        key: "3月22日",
-                        value: "伏木、終雪の頃"
-                    },
-                    {
-                        key: "3月24日",
-                        value: "舞鶴、タンポポの開花の頃"
-                    },
-                    {
-                        key: "3月27日",
-                        value: "東京、サクラの開花の頃"
-                    },
-                ]
-            },
-            {
-                title: "三月の食材",
-                item: [{
-                        key: `南瓜 <br>
-          海老芋 <br>
-          榎茸   
-          `
-                    },
-                    {
-                        key: ` 金目鯛 <br>
-          いちご   <br>
-          温州みかん            
-          `
-                    },
-                ]
-            }
-        ]
-    }
-},
+                   ]
+               },
+               {
+                   title: "三月の節気",
+                   item: [{
+                           key: "啓蟄",
+                           value: "3月5日頃"
+                       },
+                       {
+                           key: "春分",
+                           value: "3月21日頃"
+                       },
+                   ]
+               }
+           ],
+           bottom: [{
+                   title: "三月の歲時記",
+                   item: [{
+                           key: "3月2日",
+                           value: "多度津、終雪の頃"
+                       },
+                       {
+                           key: "3月4日",
+                           value: "松江、タンポポの開花の頃"
+                       },
+                       {
+                           key: "3月7日",
+                           value: "佐世保、終雪の頃"
+                       },
+                       {
+                           key: "3月9日",
+                           value: "日田、終雪の頃"
+                       },
+                       {
+                           key: "3月12日",
+                           value: "鳥取、タンポポの開花の頃"
+                       },
+                       {
+                           key: "3月15日",
+                           value: "新潟、ウメの開花の頃"
+                       },
+                       {
+                           key: "3月16日",
+                           value: "四日市、終雪の頃"
+                       },
+                       {
+                           key: "3月18日",
+                           value: "静岡、モンシロチョウの初見の頃"
+                       },
+                       {
+                           key: "3月22日",
+                           value: "伏木、終雪の頃"
+                       },
+                       {
+                           key: "3月24日",
+                           value: "舞鶴、タンポポの開花の頃"
+                       },
+                       {
+                           key: "3月27日",
+                           value: "東京、サクラの開花の頃"
+                       },
+                   ]
+               },
+               {
+                   title: "三月の食材",
+                   item: [{
+                           key: `南瓜 <br>
+             海老芋 <br>
+             榎茸   
+             `
+                       },
+                       {
+                           key: ` 金目鯛 <br>
+             いちご   <br>
+             温州みかん            
+             `
+                       },
+                   ]
+               }
+           ]
+       }
+   },
 Apr: {
     word: "April",
     translation: "卯 月",
